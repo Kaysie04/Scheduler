@@ -5,20 +5,22 @@ body {
 }
 
 textarea{
-  background: transparent;
-  border: none;
+  background: #4080bf;
+  border: solid;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  border-radius: 15px;
+  height: 75px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: #264d73;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid #264d73;
 }
 
 .description{
@@ -32,8 +34,12 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  height: 20px;
   border-top: 1px solid white;;
+}
+
+.time-display {
+  padding-bottom: 5px;
 }
 
 .hour {
@@ -59,13 +65,14 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-radius: 15px;
+  background-color: #264d73;
   color: white;
+  height: 75px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
