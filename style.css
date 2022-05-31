@@ -38,10 +38,6 @@ textarea{
   border-top: 1px solid white;;
 }
 
-.time-display {
-  padding-bottom: 5px;
-}
-
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -65,9 +61,10 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
-  border-radius: 15px;
   background-color: #264d73;
   color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   height: 75px;
 }
 
