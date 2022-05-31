@@ -17,10 +17,10 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: #264d73;
+  background-color: #99ccff;
+  color: #00264d;
   border-radius: 0;
-  border-bottom: 10px solid #264d73;
+  border-bottom: 10px solid #00264d;
 }
 
 .description{
