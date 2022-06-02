@@ -2,6 +2,16 @@ $(document).ready(function () {
     
     // displays current time
     $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+
+
+    // save button
+
+    $(".saveBtn").on("click", function() {
+       var text = $(".time-block").each(".description").val
+       var time = $(".time-block").each(".hour").val
+
+       localStorage.setItem(time, text);
+    })
 })
 
     function hourBlocks() {
@@ -214,12 +224,7 @@ $(document).ready(function () {
             }
     }
     hourBlocks();
-    
-    // save button
 
-    $(".saveBtn").on("click", function() {
-       // console.log(this)
-    })
         
       
  
