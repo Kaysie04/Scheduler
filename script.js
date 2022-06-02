@@ -19,10 +19,13 @@ $(document).ready(function () {
         // hourNine
 
          // var hourNine =  moment({h:9})
+        // var test = moment({h:9})
+        // var hourNine = test.format('h:mm');
 
-        var hourNine = (moment({h:9}).format('h:mm'));
+
+        var hourNine = moment({h:9})
         $("#9").append(hourNine)
-        $("#9").text(hourNine)
+        $("#9").text(moment({h:9}).format('h:mm'))
 
         if (moment().isAfter(hourNine, 'hour')) {
             $(".time-block-9").addClass("past");
@@ -43,9 +46,13 @@ $(document).ready(function () {
 
           // hourTen
 
-         var hourTen = (moment({h:10}).format('h:mm'));
+        //  var hourTen = (moment({h:10}).format('h:mm'));
+        //  $("#10").append(hourTen)
+        //  $("#10").text(hourTen)
+
+         var hourTen = moment({h:10})
          $("#10").append(hourTen)
-         $("#10").text(hourTen)
+         $("#10").text(moment({h:10}).format('h:mm'))
 
          if (moment().isAfter(hourTen, 'hour')) {
             $(".time-block-10").addClass("past");
@@ -66,9 +73,13 @@ $(document).ready(function () {
 
         // hourEleven
 
-         var hourEleven = (moment({h:11}).format('h:mm'));
+        //  var hourEleven = (moment({h:11}).format('h:mm'));
+        //  $("#11").append(hourEleven)
+        //  $("#11").text(hourEleven)
+
+         var hourEleven = moment({h:11})
          $("#11").append(hourEleven)
-         $("#11").text(hourEleven)
+         $("#11").text(moment({h:11}).format('h:mm'))
    
             if (moment().isAfter(hourEleven, 'hour')) {
                $(".time-block-11").addClass("past");
@@ -89,9 +100,13 @@ $(document).ready(function () {
 
         // hourTwelve
 
-         var hourTwelve = (moment({h:12}).format('h:mm'));
+        //  var hourTwelve = (moment({h:12}).format('h:mm'));
+        //  $("#12").append(hourTwelve)
+        //  $("#12").text(hourTwelve)
+
+         var hourTwelve = moment({h:12})
          $("#12").append(hourTwelve)
-         $("#12").text(hourTwelve)
+         $("#12").text(moment({h:12}).format('h:mm'))
 
          if (moment().isAfter(hourTwelve, 'hour')) {
             $(".time-block-12").addClass("past");
@@ -112,9 +127,13 @@ $(document).ready(function () {
 
         // hourThirteen
 
-            var hourThirteen = (moment({h:13}).format('h:mm'));
+            // var hourThirteen = (moment({h:13}).format('h:mm'));
+            // $("#13").append(hourThirteen)
+            // $("#13").text(hourThirteen)
+
+            var hourThirteen = moment({h:13})
             $("#13").append(hourThirteen)
-            $("#13").text(hourThirteen)
+            $("#13").text(moment({h:13}).format('h:mm'))
    
             if (moment().isAfter(hourThirteen, 'hour')) {
                $(".time-block-13").addClass("past");
@@ -135,9 +154,13 @@ $(document).ready(function () {
 
         // hourFourteen
 
-         var hourFourteen = (moment({h:14}).format('h:mm'));
+        //  var hourFourteen = (moment({h:14}).format('h:mm'));
+        //  $("#14").append(hourFourteen)
+        //  $("#14").text(hourFourteen)
+
+         var hourFourteen = moment({h:14}) 
          $("#14").append(hourFourteen)
-         $("#14").text(hourFourteen)
+         $("#14").text(moment({h:14}).format('h:mm'))
 
          if (moment().isAfter(hourFourteen, 'hour')) {
             $(".time-block-14").addClass("past");
@@ -156,11 +179,15 @@ $(document).ready(function () {
             $(".time-block-14").removeClass("future");
          }
 
-        // hourFifteen
+        // hourFifteen 
 
-            var hourFifteen = (moment({h:15}).format('h:mm'));
+            // var hourFifteen = (moment({h:15}).format('h:mm'));
+            // $("#15").append(hourFifteen)
+            // $("#15").text(hourFifteen)
+
+            var hourFifteen = moment({h:15})
             $("#15").append(hourFifteen)
-            $("#15").text(hourFifteen)
+            $("#15").text(moment({h:15}).format('h:mm'))
    
             if (moment().isAfter(hourFifteen, 'hour')) {
                $(".time-block-15").addClass("past");
@@ -181,9 +208,13 @@ $(document).ready(function () {
 
         // hourSixteen
 
-         var hourSixteen = (moment({h:16}).format('h:mm'));
+        //  var hourSixteen = (moment({h:16}).format('h:mm'));
+        //  $("#16").append(hourSixteen)
+        //  $("#16").text(hourSixteen)
+
+         var hourSixteen = moment({h:16})
          $("#16").append(hourSixteen)
-         $("#16").text(hourSixteen)
+         $("#16").text(moment({h:16}).format('h:mm'))
 
          if (moment().isAfter(hourSixteen, 'hour')) {
             $(".time-block-16").addClass("past");
@@ -204,9 +235,13 @@ $(document).ready(function () {
 
         // hourSeventeen
 
-            var hourSeventeen = (moment({h:17}).format('h:mm'));
+            // var hourSeventeen = (moment({h:17}).format('h:mm'));
+            // $("#17").append(hourSeventeen)
+            // $("#17").text(hourSeventeen)
+
+            var hourSeventeen = moment({h:17})
             $("#17").append(hourSeventeen)
-            $("#17").text(hourSeventeen)
+            $("#17").text(moment({h:17}).format('h:mm'))
 
             if (moment().isAfter(hourSeventeen, 'hour')) {
                $(".time-block-17").addClass("past");
