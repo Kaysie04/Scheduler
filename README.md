@@ -1,27 +1,22 @@
-# Scheduler
+# Work Day Scheduler
+
+## Purpose
+The purpose of this project was to create a calendar application, that allowed the user set tasks divided into hour blocks of time from 9:00am-5:00pm. When the planner is opened, the current date and time are displayed at the top of the screen and each hour block is color coded depending on if the time block hour is before, after or at the current hour. The user can click the save button to save their task, and when the page is reloaded the task will still display.
+
+## Technologies
+HTML
+CSS
+Boostrap
+JavaScript
+jQuery
+Moment.js
+
+## Webpage Display
+![Webpage Image](assets/images/readmeimg.png)
+
+## Website Link
+https://kaysie04.github.io/Code-Quiz/
 
 
-
-GIVEN I am using a daily planner to create a schedule
-
-WHEN I open the planner
-//THEN the current day is displayed at the top of the calendar
-
-WHEN I scroll down
-//THEN I am presented with time blocks for standard business hours
-
-
-WHEN I view the time blocks for that day
-//THEN each time block is color-coded to indicate whether it is in the past, present, or future
-
-
-WHEN I click into a time block
-//THEN I can enter an event
-
-
-WHEN I click the save button for that time block
-//THEN the text for that event is saved in local storage
-
-
-WHEN I refresh the page
-//THEN the saved events persist
+## Licenses
+MIT
