@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
     // displays current time
-    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm a"));
 
 
     // save button
