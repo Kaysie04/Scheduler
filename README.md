@@ -15,7 +15,7 @@ Moment.js
 ![Webpage Image](assets/images/readmeimg.png)
 
 ## Website Link
-https://kaysie04.github.io/Code-Quiz/
+https://kaysie04.github.io/Scheduler/
 
 
 ## Licenses
