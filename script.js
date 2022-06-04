@@ -6,13 +6,30 @@ $(document).ready(function () {
 
     // save button
 
-    // $(".saveBtn").on("click", function() {
-    //    var text = $(".time-block").each(".description").val
-    //    var time = $(".time-block").each(".hour").val
+     $(".saveBtn").on("click", function() {
+         var text = $(this).siblings("textarea").val();
+         var time = $(this).parent().attr("id")
+         
+         localStorage.setItem(time, text)
+        
+        // var saveData =
+        // text = $("textarea").val()
+        // localStorage.setItem('data', JSON.stringify(saveData));
+     })
 
-    //    localStorage.setItem(time, text);
-    // })
-})
+    // $("#hour-9 textarea").val(JSON.parse(localStorage.getItem('data')));
+    $("#hour-9 textarea").val(localStorage.getItem("hour-9"));
+    $("#hour-10 textarea").val(localStorage.getItem("hour-10"));
+    $("#hour-11 textarea").val(localStorage.getItem("hour-11"));
+    $("#hour-12 textarea").val(localStorage.getItem("hour-12"));
+    $("#hour-13 textarea").val(localStorage.getItem("hour-13"));
+    $("#hour-14 textarea").val(localStorage.getItem("hour-14"));
+    $("#hour-15 textarea").val(localStorage.getItem("hour-15"));
+    $("#hour-16 textarea").val(localStorage.getItem("hour-16"));
+    $("#hour-17 textarea").val(localStorage.getItem("hour-17"));
+   
+
+     
 
     function hourBlocks() {
       
@@ -25,7 +42,7 @@ $(document).ready(function () {
 
         var hourNine = moment({h:9})
         $("#9").append(hourNine)
-        $("#9").text(moment({h:9}).format('h:mm'))
+        $("#9").text(moment({h:9}).format('h a'))
 
         if (moment().isAfter(hourNine, 'hour')) {
             $(".time-block-9").addClass("past");
@@ -52,7 +69,7 @@ $(document).ready(function () {
 
          var hourTen = moment({h:10})
          $("#10").append(hourTen)
-         $("#10").text(moment({h:10}).format('h:mm'))
+         $("#10").text(moment({h:10}).format('h a'))
 
          if (moment().isAfter(hourTen, 'hour')) {
             $(".time-block-10").addClass("past");
@@ -79,7 +96,7 @@ $(document).ready(function () {
 
          var hourEleven = moment({h:11})
          $("#11").append(hourEleven)
-         $("#11").text(moment({h:11}).format('h:mm'))
+         $("#11").text(moment({h:11}).format('h a'))
    
             if (moment().isAfter(hourEleven, 'hour')) {
                $(".time-block-11").addClass("past");
@@ -106,7 +123,7 @@ $(document).ready(function () {
 
          var hourTwelve = moment({h:12})
          $("#12").append(hourTwelve)
-         $("#12").text(moment({h:12}).format('h:mm'))
+         $("#12").text(moment({h:12}).format('h a'))
 
          if (moment().isAfter(hourTwelve, 'hour')) {
             $(".time-block-12").addClass("past");
@@ -133,7 +150,7 @@ $(document).ready(function () {
 
             var hourThirteen = moment({h:13})
             $("#13").append(hourThirteen)
-            $("#13").text(moment({h:13}).format('h:mm'))
+            $("#13").text(moment({h:13}).format('h a'))
    
             if (moment().isAfter(hourThirteen, 'hour')) {
                $(".time-block-13").addClass("past");
@@ -160,7 +177,7 @@ $(document).ready(function () {
 
          var hourFourteen = moment({h:14}) 
          $("#14").append(hourFourteen)
-         $("#14").text(moment({h:14}).format('h:mm'))
+         $("#14").text(moment({h:14}).format('h a'))
 
          if (moment().isAfter(hourFourteen, 'hour')) {
             $(".time-block-14").addClass("past");
@@ -187,7 +204,7 @@ $(document).ready(function () {
 
             var hourFifteen = moment({h:15})
             $("#15").append(hourFifteen)
-            $("#15").text(moment({h:15}).format('h:mm'))
+            $("#15").text(moment({h:15}).format('h a'))
    
             if (moment().isAfter(hourFifteen, 'hour')) {
                $(".time-block-15").addClass("past");
@@ -214,7 +231,7 @@ $(document).ready(function () {
 
          var hourSixteen = moment({h:16})
          $("#16").append(hourSixteen)
-         $("#16").text(moment({h:16}).format('h:mm'))
+         $("#16").text(moment({h:16}).format('h a'))
 
          if (moment().isAfter(hourSixteen, 'hour')) {
             $(".time-block-16").addClass("past");
@@ -241,7 +258,7 @@ $(document).ready(function () {
 
             var hourSeventeen = moment({h:17})
             $("#17").append(hourSeventeen)
-            $("#17").text(moment({h:17}).format('h:mm'))
+            $("#17").text(moment({h:17}).format('h a'))
 
             if (moment().isAfter(hourSeventeen, 'hour')) {
                $(".time-block-17").addClass("past");
@@ -261,6 +278,8 @@ $(document).ready(function () {
             }
     }
     hourBlocks();
+
+})
 
         
       
